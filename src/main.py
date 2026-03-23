@@ -22,7 +22,7 @@ class PredictionInput(BaseModel):
 
 @app.post("/predict")
 def predict(input: PredictionInput):
-    npa = np.asarray(input.model_dump().values()).reshape(1,8)
+    npa = np.asarray(list(input.model_dump().values())).reshape(1,8)
     npa_stand = scaler.transform(npa)
     y_pred = model.predict(npa_stand)
     return {"mental_fatigue_score": float(y_pred[0])}
