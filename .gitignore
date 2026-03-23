@@ -12,3 +12,4 @@ __pycache__/
 
 # MLflow (plus tard)
 mlruns/
+mlflow.db
