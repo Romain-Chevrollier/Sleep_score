@@ -1,0 +1,14 @@
+# Données
+data/
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow (plus tard)
+mlruns/
