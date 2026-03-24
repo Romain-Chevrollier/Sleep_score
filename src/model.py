@@ -7,9 +7,9 @@ import joblib
 # mlflow.set_tracking_uri("sqlite:///" + os.path.abspath("mlflow.db"))
 
 def load_model():
-    model = joblib.load("data/best_model.joblib")
+    model = joblib.load("models/best_model.joblib")
     return model
 
 
 def load_scaler():
-    return joblib.load("data/scaler.joblib") 
+    return joblib.load("models/scaler.joblib") 
