@@ -15,3 +15,5 @@ mlruns/
 mlflow.db
 
 venv/
+monitoring_report.html
+monitoring_report_drift.html
